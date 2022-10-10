@@ -117,5 +117,5 @@ st.header("Now use the slider to visualize atom count at different time steps in
 
 # if st.button("plot"):
 step = st.slider("time step", value=0, max_value=n)
-st.bar_chart(data = c_lis[step], height=500 )
+st.bar_chart(data = c_lis[step])
 
