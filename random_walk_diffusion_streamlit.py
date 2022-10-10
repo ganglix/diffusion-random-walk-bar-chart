@@ -8,7 +8,7 @@ header = st.beta_container()
 with header:
     st.title("Diffusion - random movement of atoms")
     st.text(
-        "This app use bar chart to visualize the diffusion process due to the random movement of atoms in 1-D."
+        "This app uses a bar chart to visualize the diffusion process due to the random movement of atoms in 1-D."
     )
 
 # data input from user
@@ -113,7 +113,7 @@ n=total_time_step
 # if st.checkbox("check to compute"):
 c_lis = c_time_steps(n)
 # x_grid = list(range(len(c_lis[0])))
-st.header("Now use the slider to visualize atom count at different time steps in a bar char")
+st.header("Now use the slider to visualize atom count at different time steps in a bar chart")
 
 # if st.button("plot"):
 step = st.slider("time step", value=0, max_value=n)
