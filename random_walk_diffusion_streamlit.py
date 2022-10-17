@@ -17,7 +17,7 @@ st.sidebar.header("Parameter settings")
 # sidebar parameter setting
 no_move_prob = st.sidebar.number_input(
     "Probability of atom staying in place", 
-    value=0.2, step=0.01, min_value = 0.01, max_value=0.99, format="%.3f"
+    value=0.8, step=0.01, min_value = 0.01, max_value=0.99, format="%.3f"
 )
 left_move_prob = (1-no_move_prob)/2  # ft/ns
 right_move_prob = left_move_prob
