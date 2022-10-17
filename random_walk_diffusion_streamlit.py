@@ -58,9 +58,9 @@ grid_9 = st.sidebar.number_input(
 c_init = np.array([grid_0, grid_1, grid_2, grid_3, grid_4, grid_5, grid_6, grid_7, grid_8, grid_9])
 
 
-def choose_left_right(number):
+def choose_left_right(number, p_no_move=no_move_prob, p_left=left_move_prob, p_right=right_move_prob):
     """label atoms with 0, -1, 1, meaning no move, move left, move right"""
-    label = np.random.choice([0, -1, 1], number, p=[0.8,0.1,0.1])
+    label = np.random.choice([0, -1, 1], number, p=[p_no_move,p_left,p_right])
     left_no = len(label[label == -1])
     right_no = len(label[label == 1])
     return (left_no, right_no)
