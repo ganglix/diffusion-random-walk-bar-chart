@@ -4,7 +4,7 @@ import streamlit as st
 
 st.set_page_config(layout="wide")
 # front end main page
-header = st.beta_container()
+header = st.container()
 with header:
     st.title("Diffusion - random movement of atoms")
     st.text(
@@ -65,7 +65,6 @@ def choose_left_right(number, p_no_move=no_move_prob, p_left=left_move_prob, p_r
     right_no = len(label[label == 1])
     return (left_no, right_no)
 
-@st.cache
 def c_time_steps(n, c_init=c_init):
     c = c_init
     c_lis = []
